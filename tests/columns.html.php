@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta property="fb:app_id" content="355615554837150">
+    <meta property="og:url" content="https://grid.sexy/tests/columns">
     <title>Test</title>
     <link rel="author" href="https://alexanderchristiaanjacob.com/">
+    <link rel="canonical" href="https://grid.sexy/tests/columns">
     <link rel="stylesheet" href="../dist/grid.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
