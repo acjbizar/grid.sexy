@@ -2,6 +2,7 @@
 <html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Build sophisticated layouts out of the box.">
     <meta property="fb:app_id" content="355615554837150">
     <meta property="og:url" content="https://grid.sexy/">
     <title>Grid.sexy</title>
