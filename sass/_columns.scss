@@ -52,12 +52,16 @@
 
     // Golden ratio a for every breakpoint.
     .col-#{$breakpoint}-gr1 {
-      max-width: percentage(1 / $golden-ratio);
+      $p: percentage(1 / $golden-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     // Golden ratio b for every breakpoint.
     .col-#{$breakpoint}-gr2 {
-      max-width: percentage(1 - 1 / $golden-ratio);
+      $p: percentage(1 - 1 / $golden-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     .offset-#{$breakpoint}-gr1 {
@@ -70,12 +74,16 @@
 
     // Silver ratio a for every breakpoint.
     .col-#{$breakpoint}-sr1 {
-      max-width: percentage(1 / $silver-ratio);
+      $p: percentage(1 / $silver-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     // Silver ratio b for every breakpoint.
     .col-#{$breakpoint}-sr2 {
-      max-width: percentage(1 - 1 / $silver-ratio);
+      $p: percentage(1 - 1 / $silver-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     .offset-#{$breakpoint}-sr1 {
@@ -88,12 +96,16 @@
 
     // Bronze ratio a for every breakpoint.
     .col-#{$breakpoint}-br1 {
-      max-width: percentage(1 / $bronze-ratio);
+      $p: percentage(1 / $bronze-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     // Bronze ratio b for every breakpoint.
     .col-#{$breakpoint}-br2 {
-      max-width: percentage(1 - 1 / $bronze-ratio);
+      $p: percentage(1 - 1 / $bronze-ratio);
+      flex: 0 0 $p;
+      max-width: $p;
     }
 
     .offset-#{$breakpoint}-br1 {

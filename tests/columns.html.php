@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0,shrink-to-fit=no,width=device-width">
     <meta property="fb:app_id" content="355615554837150">
     <meta property="og:url" content="https://grid.sexy/tests/columns">
-    <title>Test</title>
+    <title>Columns</title>
     <link rel="author" href="https://alexanderchristiaanjacob.com/">
     <link rel="canonical" href="https://grid.sexy/tests/columns">
     <link rel="stylesheet" href="../css/grid.css">
