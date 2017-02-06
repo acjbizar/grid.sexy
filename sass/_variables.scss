@@ -1,0 +1,29 @@
+
+// Sensible breakpoints.
+// Inspired by https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.q5y3m0n2v
+$breakpoints: (
+        xs: 0,
+        s: 300px,
+        m: 600px,
+        l: 900px,
+        xl: 1200px,
+        xxl: 1500px,
+        xxxl: 1800px
+) !default;
+
+$containers: (
+        s: 264px,
+        m: 576px,
+        l: 864px,
+        xl: 1176px
+) !default;
+
+// The maximum number of columns.
+$columns: 24;
+
+// The total gutter size. Usually cut in half, so two adjacent elements create a whole.
+$gutter: 24px;
+
+$golden-ratio: 1.618033988;
+$silver-ratio: 2.414213562;
+$bronze-ratio: 3.302775637;

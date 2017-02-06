@@ -1,0 +1,138 @@
+
+// This goes for everything we consider a column.
+[class*="col-"], .col {
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px; // Prevent collapsing.
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  position: relative;
+  width: 100%;
+}
+
+// Default column has automatic width.
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+// Auto width.
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+// Walk through all the breakpoints.
+@each $breakpoint in map-keys($breakpoints) {
+
+  // Clever little counter/list.
+  $used: 0%;
+
+  // Trigger the relevant media mixin.
+  @include media-breakpoint-up($breakpoint, $breakpoints) {
+
+    // Equal width column for every breakpoint.
+    .col-#{$breakpoint} {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+
+    // Auto width for every breakpoint.
+    .col-#{$breakpoint}-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+
+    // Golden ratio a for every breakpoint.
+    .col-#{$breakpoint}-gr1 {
+      max-width: percentage(1 / $golden-ratio);
+    }
+
+    // Golden ratio b for every breakpoint.
+    .col-#{$breakpoint}-gr2 {
+      max-width: percentage(1 - 1 / $golden-ratio);
+    }
+
+    .offset-#{$breakpoint}-gr1 {
+      margin-left: percentage(1 / $golden-ratio);
+    }
+
+    .offset-#{$breakpoint}-gr2 {
+      margin-left: percentage(1 - 1 / $golden-ratio);
+    }
+
+    // Silver ratio a for every breakpoint.
+    .col-#{$breakpoint}-sr1 {
+      max-width: percentage(1 / $silver-ratio);
+    }
+
+    // Silver ratio b for every breakpoint.
+    .col-#{$breakpoint}-sr2 {
+      max-width: percentage(1 - 1 / $silver-ratio);
+    }
+
+    .offset-#{$breakpoint}-sr1 {
+      margin-left: percentage(1 / $silver-ratio);
+    }
+
+    .offset-#{$breakpoint}-sr2 {
+      margin-left: percentage(1 - 1 / $silver-ratio);
+    }
+
+    // Bronze ratio a for every breakpoint.
+    .col-#{$breakpoint}-br1 {
+      max-width: percentage(1 / $bronze-ratio);
+    }
+
+    // Bronze ratio b for every breakpoint.
+    .col-#{$breakpoint}-br2 {
+      max-width: percentage(1 - 1 / $bronze-ratio);
+    }
+
+    .offset-#{$breakpoint}-br1 {
+      margin-left: percentage(1 / $bronze-ratio);
+    }
+
+    .offset-#{$breakpoint}-br2 {
+      margin-left: percentage(1 - 1 / $bronze-ratio);
+    }
+
+    // Walk through denominators.
+    @for $d from 1 through $columns {
+
+      // Walk through numerators.
+      @for $n from 1 through $d {
+
+        // Calculate the percentage.
+        $p: percentage($n / $d);
+
+        // Check if said percentage has been used before.
+        // We only want the lowest common denominator, in order to save bytes.
+        // (We do not need 10/20 when we have 1.2.)
+        @if(index($used, $p) == null) {
+
+          // Put percentage in the list.
+          $used: append($used, $p);
+
+          // At last, define the column.
+          .col-#{$breakpoint}-#{$n}o#{$d} {
+            flex: 0 0 $p;
+            max-width: $p;
+          }
+
+          // Define offsets (empty columns on the left).
+          .offset-#{$breakpoint}-#{$n}o#{$d} {
+            margin-left: $p;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
