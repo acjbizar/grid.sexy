@@ -90,16 +90,16 @@
             endfor;
         endfor;
 
-        echo '<div class="col-xs-gr1">';
+        echo '<div class="col-xs-gr1 golden">';
         echo '<div class="filler"></div>';
         echo '</div>';
-        echo '<div class="col-xs-gr2">';
+        echo '<div class="col-xs-gr2 golden">';
         echo '<div class="filler"></div>';
         echo '</div>';
-        echo '<div class="col-xs-sr1">';
+        echo '<div class="col-xs-sr1 silver">';
         echo '<div class="filler"></div>';
         echo '</div>';
-        echo '<div class="col-xs-sr2">';
+        echo '<div class="col-xs-sr2 silver">';
         echo '<div class="filler"></div>';
         echo '</div>';
 
