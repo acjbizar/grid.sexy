@@ -8,7 +8,7 @@
     <title>Grid.sexy</title>
     <link rel="author" href="https://alexanderchristiaanjacob.com/">
     <link rel="canonical" href="https://grid.sexy/">
-    <link rel="stylesheet" href="dist/grid.min.css">
+    <link rel="stylesheet" href="css/grid.css">
     <style>
         * {
             border: 0;
@@ -22,6 +22,8 @@
             font-size: 6em;
             line-height: .75;
             margin: .75em 0;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .125);
+            transform: rotate(-45deg);
         }
 
         html {
@@ -37,13 +39,15 @@
         }
 
         .row > div {
-            padding-bottom: .25em;
-            padding-top: .25em;
+            padding-bottom: .375em;
+            padding-top: .375em;
         }
 
-        .row > div > div {
-            background: rgba(0, 0, 0, .125);
+        .filler {
+            background: rgba(0, 0, 0, .0625);
             height: 100%;
+            outline: 1px solid rgba(0, 0, 0, .25);
+            outline-offset: 0;
         }
 
         .golden {
@@ -104,7 +108,15 @@
 </div>
 <main>
     <div class="container">
-        <h1><span class="grid">Grid</span><span class="dot">.</span><span class="sexy">sexy</span></h1>
+        <div class="row">
+            <div class="col-xs-1o3">
+                <h1>
+                    <span class="grid">Grid</span>
+                    <span class="dot">.</span>
+                    <span class="sexy">sexy</span>
+                </h1>
+            </div>
+        </div>
     </div>
 </main>
 </body>

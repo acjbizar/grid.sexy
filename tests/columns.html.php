@@ -7,13 +7,13 @@
     <title>Test</title>
     <link rel="author" href="https://alexanderchristiaanjacob.com/">
     <link rel="canonical" href="https://grid.sexy/tests/columns">
-    <link rel="stylesheet" href="../dist/grid.min.css">
+    <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body id="top">
 <?php
 
-$breakpoints = ['xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl'];
+$breakpoints = ['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'];
 $denominators = 24;
 
 foreach($breakpoints as $breakpoint):
