@@ -7,15 +7,18 @@
   position: relative;
   width: 100%; }
 
-.container-left {
+.container-left, .container-right {
+  box-sizing: border-box;
   padding-left: 0.75rem;
-  padding-right: 0.75rem; }
+  padding-right: 0.75rem;
+  position: relative;
+  width: 100%; }
 
 @media (min-width: 300px) {
   .container {
     max-width: 264px; }
   .container-left {
-    max-width: calc(264px + (100% - 264px) / 2 - 1.5rem); }
+    max-width: calc(264px + (100% - 264px) / 2); }
   .container-right {
     margin-left: calc((100% - 264px) / 2);
     max-width: calc(264px + (100% - 264px) / 2); } }
@@ -24,7 +27,7 @@
   .container {
     max-width: 576px; }
   .container-left {
-    max-width: calc(576px + (100% - 576px) / 2 - 1.5rem); }
+    max-width: calc(576px + (100% - 576px) / 2); }
   .container-right {
     margin-left: calc((100% - 576px) / 2);
     max-width: calc(576px + (100% - 576px) / 2); } }
@@ -33,7 +36,7 @@
   .container {
     max-width: 864px; }
   .container-left {
-    max-width: calc(864px + (100% - 864px) / 2 - 1.5rem); }
+    max-width: calc(864px + (100% - 864px) / 2); }
   .container-right {
     margin-left: calc((100% - 864px) / 2);
     max-width: calc(864px + (100% - 864px) / 2); } }
@@ -42,7 +45,7 @@
   .container {
     max-width: 1176px; }
   .container-left {
-    max-width: calc(1176px + (100% - 1176px) / 2 - 1.5rem); }
+    max-width: calc(1176px + (100% - 1176px) / 2); }
   .container-right {
     margin-left: calc((100% - 1176px) / 2);
     max-width: calc(1176px + (100% - 1176px) / 2); } }
