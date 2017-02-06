@@ -10,8 +10,13 @@
   width: 100%;
 }
 
+.no-gutter [class*="col-"], .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 // Default column has automatic width.
-.col {
+.col, .col-flex {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
