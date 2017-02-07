@@ -73,7 +73,15 @@
         endfor;
     endfor;
 
+    echo '<h2>Gold</h2>';
+    echo '<div class="row"><div class="col-xs-gr1"><code>.col-xs-gr1</code></div></div>';
+    echo '<div class="row"><div class="col-xs-gr2"><code>.col-xs-gr2</code></div></div>';
+    echo '<h2>Silver</h2>';
+    echo '<div class="row"><div class="col-xs-sr1"><code>.col-xs-sr1</code></div></div>';
+    echo '<div class="row"><div class="col-xs-sr2"><code>.col-xs-sr2</code></div></div>';
+
     ?>
 </div>
+<footer>&copy;</footer>
 </body>
 </html>
