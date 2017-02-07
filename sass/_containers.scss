@@ -17,6 +17,14 @@
   width: 100%;
 }
 
+.container.no-gutter,
+.container-fluid.no-gutter,
+.container-left.no-gutter,
+.container-right.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @each $container in map_keys($containers) {
   @include media-breakpoint-up($container, $breakpoints) {
     .container {
