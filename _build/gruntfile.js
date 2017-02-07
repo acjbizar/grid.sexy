@@ -5,8 +5,8 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     noCache: true,
-                    sourcemap: 'none',
-                    style: 'compressed'
+                    sourceMap: false,
+                    outputStyle: 'compressed'
                 },
                 files: {
                     '../dist/grid.min.css': '../sass/grid.scss'
@@ -15,8 +15,8 @@ module.exports = function(grunt) {
             src: {
                 options: {
                     noCache: true,
-                    sourcemap: 'none',
-                    style: 'expanded'
+                    sourceMap: false,
+                    outputStyle: 'expanded'
                 },
                 files: {
                     '../css/grid.css': '../sass/grid.scss'
