@@ -2,5 +2,6 @@
 DirectoryIndex index.html.php
 
 RewriteEngine On
+RewriteCond %{REMOTE_ADDR} !=::1
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
