@@ -11,33 +11,69 @@
     <link rel="canonical" href="https://grid.sexy/tests/columns">
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="main.css">
+    <style>
+        [class*="col-"] {
+            overflow: visible;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body id="top">
-<?php
+<div class="container">
+    <h1>Columns</h1>
+    <?php
 
-$breakpoints = ['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'];
-$denominators = 24;
+    define('MAX_COLUMNS', 24);
 
-foreach($breakpoints as $breakpoint):
+    function make_columns($b = 'xs')
+    {
+        global $max_columns;
 
-    echo '<section class="container"><h2>' . $breakpoint . '</h2>';
+        // Rules container.
+        $r = [];
 
-    for($d = $denominators; $d > 0; --$d):
+        for($d = MAX_COLUMNS; $d > 0; --$d) {
 
-        echo '<div class="row">';
+            // Numerators.
+            for($n = 1; $n <= $d; ++$n) {
 
-        for($n = 0; $n < $d; ++$n):
-            echo '<div class="col-' . $breakpoint . '-1o' . $d . '"></div>';
+                // Percentage.
+                $p = 100 / $d * $n;
+
+                // Rule.
+                $r["$p"] = [];
+                $r["$p"]['d'] = $d;
+                $r["$p"]['class'] = 'col-' . $b . '-' . $n . 'o' . $d;
+            }
+        }
+
+        // Order the rules.
+        krsort($r);
+
+        // Return the rules.
+        return $r;
+    }
+
+    $columns = make_columns();
+
+    for($d = 1; $d <= MAX_COLUMNS; ++$d):
+
+        echo '<h2>' . $d . '</h2>';
+
+        for($n = 1; $n <= $d; ++$n):
+
+            $p = 100 / $d * $n;
+
+            if(isset($columns["$p"]) AND $columns["$p"]['d'] === $d):
+                echo '<div class="row">';
+                echo '<div class="' . $columns["$p"]['class'] . '"><code>.' . $columns["$p"]['class'] . '</code></div>';
+                echo '</div>';
+            endif;
+
         endfor;
-
-        echo '</div>';
-
     endfor;
 
-    echo '</section>';
-
-endforeach;
-
-?>
+    ?>
+</div>
 </body>
 </html>
