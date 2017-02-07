@@ -17,10 +17,8 @@
   width: 100%;
 }
 
-.container.no-gutter,
-.container-fluid.no-gutter,
-.container-left.no-gutter,
-.container-right.no-gutter {
+[class*="container"].no-gutter,
+.no-gutter [class*="container"] {
   padding-left: 0;
   padding-right: 0;
 }
