@@ -1,6 +1,8 @@
 
 DirectoryIndex index.html.php
 
+Options +MultiViews
+
 RewriteEngine On
 RewriteCond %{REMOTE_ADDR} !=::1
 RewriteCond %{HTTPS} off

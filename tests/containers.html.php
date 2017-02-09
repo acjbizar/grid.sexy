@@ -12,27 +12,36 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="main.css">
     <style>
-        .container {
+        .examples .container {
             background-color: red;
         }
 
-        .container-fluid {
+        .examples .container-fluid {
             background-color: lime;
         }
 
-        .container-left {
+        .examples .container-left {
             background-color: blue;
         }
 
-        .container-right {
+        .examples .container-right {
             background-color: magenta;
         }
     </style>
 </head>
 <body id="top">
-<div class="container">Container</div>
-<div class="container-fluid">Container fluid</div>
-<div class="container-left">Container left</div>
-<div class="container-right">Container right</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Containers</h1>
+        </div>
+    </div>
+</div>
+<div class="examples">
+    <div class="container">Container</div>
+    <div class="container-fluid">Container fluid</div>
+    <div class="container-left">Container left</div>
+    <div class="container-right">Container right</div>
+</div>
 </body>
 </html>
