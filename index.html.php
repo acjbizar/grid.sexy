@@ -135,7 +135,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-auto">
+            <div class="col">
                 <pre><code>&lt;link href=&quot;https://grid.sexy/css/grid.css&quot; rel="stylesheet"&gt;</code>
                 </pre>
             </div>
