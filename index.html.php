@@ -16,9 +16,15 @@
     <style>
         * {
             border: 0;
+            box-sizing: border-box;
+            font-size: 1em;
             margin: 0;
             outline: 0;
             padding: 0;
+        }
+
+        code, pre, samp {
+            font-family: "Consolas", "Menlo", "Courier", monospace;
         }
 
         h1 {
@@ -40,6 +46,13 @@
 
         h1 span.dot {
             display: none;
+        }
+
+        pre {
+            background: rgba(255, 255, 255, .5);
+            overflow: auto;
+            padding: .75rem;
+            white-space: pre;
         }
 
         .row > div {
@@ -119,6 +132,12 @@
                     <span class="dot">.</span>
                     <span class="sexy">sexy</span>
                 </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto">
+                <pre><code>&lt;link href=&quot;https://grid.sexy/css/grid.css&quot; rel="stylesheet"&gt;</code>
+                </pre>
             </div>
         </div>
     </div>
