@@ -15,10 +15,19 @@
 <body id="top">
 <?php
 
-$breakpoints = ['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'];
+$breakpoints = [
+    'xs' => 'Extra small',
+    's' => 'Small',
+    'm' => 'Medium',
+    'l' => 'Large',
+    'xl' => 'Extra large',
+    'xxl' => 'Extra extra large',
+    'xxxl' => 'Triple X'
+];
+
 $denominators = 24;
 
-foreach($breakpoints as $breakpoint):
+foreach($breakpoints as $breakpoint => $description):
 
     echo '<section class="container"><h2>' . $breakpoint . '</h2>';
 

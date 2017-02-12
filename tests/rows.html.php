@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#f43530">
@@ -41,8 +41,8 @@
     </style>
 </head>
 <body id="top">
-<h1>Rows</h1>
 <div class="container">
+    <h1>Rows</h1>
     <div class="demo row">
         <div class="col">row</div>
     </div>
