@@ -20,6 +20,7 @@ h2 {
 
 html {
     font: normal 100%/1.5 sans-serif, serif;
+    overflow-y: scroll;
 }
 
 nav li {

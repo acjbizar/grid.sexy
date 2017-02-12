@@ -19,6 +19,19 @@
     </style>
 </head>
 <body id="top">
+<nav>
+    <div class="container-right">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../tests/">Tests</a></li>
+                    <li><a href="../examples/">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 <div class="container">
     <h1>Columns</h1>
     <?php

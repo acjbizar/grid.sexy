@@ -75,6 +75,10 @@
             background: #dddddd;
         }
 
+        #main {
+            /*display: none;*/
+        }
+
         #sample {
             background: #f43530;
             height: 100vh;
@@ -123,7 +127,7 @@
         ?>
     </div>
 </div>
-<main>
+<main id="main">
     <div class="container">
         <div class="row">
             <div class="col-xs-1o3">
@@ -142,5 +146,8 @@
         </div>
     </div>
 </main>
-</body>
-</html>
+<?php
+
+require_once 'app/views/footer.php';
+
+?>
