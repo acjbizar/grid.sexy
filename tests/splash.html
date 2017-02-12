@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grid.Sexy</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <style>
+        * {
+            border: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        body, html {
+            height: 100vh;
+        }
+
+        html {
+            background: #ddd;
+            color: rgba(0, 0, 0, .9);
+            font: normal 100%/1.5 sans-serif, serif;
+        }
+
+        #container {
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        #container .container div div {
+            background: rgba(255, 235, 0, 1);
+            height: 50vh;
+        }
+
+        #container-left {
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        #container-left .container-left div div {
+            background: rgba(244, 53, 48, 1);
+            height: 50vh;
+        }
+
+        #container-right {
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 25%;
+            width: 100%;
+        }
+
+        #container-right .container-right {
+            background: rgba(0, 152, 216, 1);
+            height: 50vh;
+        }
+
+        #description {
+            display: none;
+        }
+
+        #logo {
+            bottom: 0;
+            font-size: 18rem;
+            left: 0;
+            letter-spacing: -.0625em;
+            line-height: 1;
+            position: absolute;
+            right: 0;
+        }
+
+        #logo span {
+            bottom: 0;
+            position: absolute;
+        }
+
+        #logo .dot {
+            /**/
+        }
+
+        #logo .grid {
+            color: white;
+            z-index: 1;
+        }
+
+        #logo .sexy {
+            right: 0;
+        }
+
+        #splash {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body id="top">
+<main id="splash">
+    <div id="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1o2 offset-xs-1o4"></div>
+            </div>
+        </div>
+    </div>
+    <div id="container-left">
+        <div class="container-left">
+            <div class="row">
+                <div class="col-xs-2o3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="container-right">
+        <div class="container-right">
+            <div class="row">
+                <div class="col-xs-2o3"></div>
+            </div>
+        </div>
+    </div>
+    <h1 id="logo"><span class="grid">Grid</span><span class="dot">.</span><span class="sexy">Sexy</span></h1>
+    <div id="description">
+        <p>Build sophisticated layouts out of the box.</p>
+    </div>
+</main>
+</body>
+</html>
