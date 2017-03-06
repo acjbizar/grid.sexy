@@ -1,0 +1,30 @@
+
+// Disable gutter, also when child of no-gutter row or container (or anything else).
+.no-gutter [class*="col-"],
+[class*="col-"].no-gutter,
+.col.no-gutter,
+.no-gutter .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Re-enable gutters.
+.gutter [class*="col-"],
+[class*="col-"].gutter,
+.col.gutter,
+.gutter .col {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+}
+
+// No gutters.
+.row.no-gutter, .no-gutter .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// Gutters.
+.row.gutter .gutter .row {
+  margin-left: $gutter / -2;
+  margin-right: $gutter / -2;
+}

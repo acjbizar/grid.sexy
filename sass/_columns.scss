@@ -10,15 +10,6 @@
   width: 100%;
 }
 
-// Disable gutter, also when child of no-gutter row or container (or anything else).
-.no-gutter [class*="col-"],
-[class*="col-"].no-gutter,
-.col.no-gutter,
-.no-gutter .col {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 // Default column has automatic width.
 .col, .col-flex {
   flex-basis: 0;
