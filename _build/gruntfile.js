@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    '../dist/grid.min.css': '../sass/grid.scss'
+                    '../dist/grid.min.css': '../sass/grid.scss',
+                    '../css/grid.min.css': '../sass/grid.scss'
                 }
             },
             src: {

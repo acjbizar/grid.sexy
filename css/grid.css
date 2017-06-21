@@ -9687,7 +9687,7 @@
   margin-right: 0;
 }
 
-.row.gutter .gutter .row {
+.row.gutter, .gutter .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
