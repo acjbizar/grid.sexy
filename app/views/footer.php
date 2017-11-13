@@ -1,6 +1,7 @@
+<footer></footer>
 <?php
 
-require_once 'analytics.php';
+include_once 'analytics.php';
 
 ?>
 </body>
