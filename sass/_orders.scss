@@ -1,0 +1,21 @@
+
+// Walk through all the breakpoints.
+@each $breakpoint in map-keys($breakpoints) {
+
+  @include media-breakpoint-up($breakpoint, $breakpoints) {
+
+    .order-#{$breakpoint}-first {
+      order: -1;
+    }
+
+    .order-#{$breakpoint}-last {
+      order: $columns + 1;
+    }
+
+    @for $d from 1 through $columns {
+      .order-#{$breakpoint}-#{$d} {
+        order: $d;
+      }
+    }
+  }
+}
