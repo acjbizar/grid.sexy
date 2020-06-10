@@ -9,8 +9,8 @@ module.exports = function(grunt) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    '../dist/grid.min.css': '../sass/grid.scss',
-                    '../css/grid.min.css': '../sass/grid.scss'
+                    'www/dist/grid.min.css': 'www/sass/grid.scss',
+                    'www/css/grid.min.css': 'www/sass/grid.scss'
                 }
             },
             src: {
@@ -20,13 +20,13 @@ module.exports = function(grunt) {
                     outputStyle: 'expanded'
                 },
                 files: {
-                    '../css/grid.css': '../sass/grid.scss'
+                    'www/css/grid.css': 'www/sass/grid.scss'
                 }
             }
         },
         watch: {
             css: {
-                files: ['../sass/**/*.scss'],
+                files: ['www/sass/**/*.scss'],
                 tasks: ["sass"]
             }
         }
