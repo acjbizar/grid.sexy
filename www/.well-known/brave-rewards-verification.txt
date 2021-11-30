@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: grid.sexy
+Token: 1435a4de328b99cd779020027d9c838bf73af1ee0644ea8ed975fe34d617c055
