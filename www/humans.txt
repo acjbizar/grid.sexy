@@ -1,0 +1,8 @@
+/* TEAM */
+    Webmaster: Alexander Christiaan Jacob
+    Site: https://alexanderchristiaanjacob.com/
+    Twitter: @ACJ
+    From: The Hague, Netherlands
+
+/* SITE */
+    Standards: HTML, CSS

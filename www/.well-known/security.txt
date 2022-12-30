@@ -1,0 +1,3 @@
+Contact: https://deidee.com/contact
+Preferred-Languages: nl, en
+Canonical: https://grid.sexy/.well-known/security.txt
